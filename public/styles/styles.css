@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  max-width: 500px;
+  margin: auto;
+}
+
+h1 {
+  font-weight: 300;
+  padding-bottom: 1rem;
+  color: #000000;
+  text-align: center;
+}
+
+.container {
+  max-width: 90%;
+  margin: auto;
+  text-align: center;
+  color: #fff;
+  -webkit-box-shadow: 0 2px 2px #00000021;
+          box-shadow: 0 2px 2px #00000021;
+  padding: 1rem;
+}
+
+.container .holder {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .text-field {
+  padding: 10px;
+  width: 100%;
+  margin-right: 5px;
+}
+
+.container .button {
+  padding: 10px;
+  width: 30%;
+  background: #23282e;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.container ul {
+  list-style: none;
+  padding-top: 1rem;
+}
+
+.container ul input {
+  height: 18px;
+  width: 18px;
+  margin-right: 10px;
+}
+
+.container li {
+  background-color: #23282e;
+  color: #fff;
+  text-align: left;
+  margin: 1rem 0;
+}
+
+.container li label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+}
+
+.container li:hover {
+  text-decoration: line-through;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 0;
+}
+/*# sourceMappingURL=styles.css.map */

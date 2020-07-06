@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App | Abdul Moqueet</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/main.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>TODO App</h1>
+        <form action="/" method="POST">
+            <div class="holder">
+                <input class="text-field" type="text" name="newItem" placeholder="Add new items...">
+                <input class="button" type="submit" value="Add">
+            </div>
+        </form>
+        <ul>
+            <% items.forEach((itm) => { %>
+            <form action="/delete" method="POST">
+                <li><label>
+                    <input type="checkbox" name="itemId" onChange="this.form.submit();" value="<%= itm._id %>"><%= itm.item %>
+                </label></li>
+            </form>
+            <% }); %>
+        </ul>
+    </div>
+
+</body>
+
+</html>
